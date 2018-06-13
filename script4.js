@@ -21,8 +21,11 @@ alert("Добро пожаловать, Ваше Величество");
 alert("Укажите дату Вашего рождения");
 };
 var day = prompt("День", 7);
++day;
 var month = prompt("Месяц", 11);
++month;
 var year = prompt("Год", 1998);
++year
 if ((day === 7) & (month === 11) & (year === 1998)) {
   alert("Ну конечно...");
 }
