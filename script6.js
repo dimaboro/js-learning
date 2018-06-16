@@ -31,30 +31,42 @@ if (name == "ECMAScript") {
 
 // ==========================================================
 
+// делаем функцию ради undefined = null
+
 var hello = function () {
+
+// запрашиваем имя
 
   var admin = prompt("Who?", " ");
 
   var empty = undefined = null;
-
+// первое значение запрашиваемой переменной
   if (empty) {
 
     console.log("No entrase");
-
+// второе значение
   } else if ("admin") {
-
+// первая опция второго значения
       if ("Black King") {
 
         console.log("Welkome!");
-
+// вторая опция
     } else if (empty) {
 
       console.log("Good bye");
+// третья опция
     } else {
+
       console.log("not right!");
+
     }
+
+// опции закрыты
+
+// третье значение
 
   } else {
     console.log("I don't know U.");
   }
 }
+// конец
