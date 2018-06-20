@@ -75,6 +75,8 @@ console.log( parseFloat("12.3456.7") ); //12.3456
 
 console.log( parseInt( "0xFF", 16 ) ); // 255
 
+// функция проверки на число
+
 function isNumeric(n) {
   return !isNaN(parseFloat(n) ) && isFinite(n);
 }
@@ -94,4 +96,38 @@ console.log(n.toString(36) );
 // округление до целого: вниз Math.floor, вверх Math.ceil,
  // до ближайшего Math.round
 
-console.log();
+ var n = 123.456;
+
+console.log( Math.round(n * 100) / 100 ); //до 2 знаков после запятой
+
+// округление до заданной точности
+
+console.log( n.toFixed(5) );
+
+//математические функции
+
+console.log(Math.sqrt(9) ); // 3
+
+console.log(Math.log(1));
+
+console.log( Math.pow(2,5) ); //32
+
+console.log( Math.abs(3) );
+
+// чтоб число было красивым
+
+var random = 238778537874639
+
+console.log(random.toLocaleString());
+
+function getDecimal(num) {
+  return num - Math.floor(num);
+};
+console.log( getDecimal (12.221.toFixed(3) ) );
+
+console.log(Math.random());
+
+function randomMax(max) {
+  return Math.random() * max;
+}
+console.log( randomMax(5) );
